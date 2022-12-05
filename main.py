@@ -1,5 +1,6 @@
 import discord
 import random
+import csv
 from discord.ext import commands
 TOKEN = ""
 
@@ -45,8 +46,8 @@ async def catch(ctx):
             num=new[2]
         num=int(num)
         shiny=num*6
-        name = ctx.message.author
-        name = str(name)
+        user = ctx.message.author
+        name = str(user)
         name = name[:-5]
         count=0
         
@@ -56,9 +57,48 @@ async def catch(ctx):
         if prob == 1 and random.randrange(shiny) != 1:
             embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
             
+            list = []
+            with open("PokeDex.csv", newline="") as file:
+                reader = csv.reader(file)
+                for row in reader:
+                    i = 1
+                    if row[0] == user:
+                        for sen in row:
+                            list += (sen)
+
+                        list += (new[0] + ", ")
+                        
+                    elif (row[0] != user and i < len(row)):
+                        i +=1
+                    elif (row[0] != user and i == len(row)):
+                        list = (name + ", ")
+                        i = 1
+                        for sen in row:
+                            list += (sen)
+                        list += (new[0] + ", ")
+
+
             
-            #f = open(user + ".txt", "a")
-            #f.append(new[0])
+            file = open("PokeDex.csv", "w")
+            writer = csv.writer(file)
+            for row in reader:
+                    if row[0] == user:
+                        writer.writerow(list)
+
+            await ctx.reply(str(list))
+
+
+
+            
+                    
+
+
+                    
+
+
+                    
+                    
+            #f.write(new[0])
             await ctx.reply(embed=embed)
 
             count=2
