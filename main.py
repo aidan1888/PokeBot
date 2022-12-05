@@ -31,6 +31,8 @@ async def catch(ctx):
 
     
     count=1
+    final =""
+    name = ""
     while (count == 1):
         count =1
         new=random.choice(pokemonList)
@@ -43,15 +45,17 @@ async def catch(ctx):
             num=new[2]
         num=int(num)
         shiny=num*6
-        user = ctx.message.author
+        name = ctx.message.author
+        name = str(name)
+        long = len(name)
+        name = name[4:len]
         count=0
-        while count<5:
-            user = user[:-1]
-            count+=1
+        
+
         
         prob=random.randrange(num)
         if prob == 1 and random.randrange(shiny) != 1:
-            embed=discord.Embed(title=new[0], description= f"{user} has caught " + new[0] + "!")
+            embed=discord.Embed(title=new[0], description= f"{final} has caught " + new[0] + "!")
             
             
             #f = open(user + ".txt", "a")
@@ -60,7 +64,7 @@ async def catch(ctx):
 
             count=2
         elif prob == 1 and random.randrange(shiny) == 1:
-            await ctx.reply("{user} has caught a SHINY " + new[0] + "!")
+            await ctx.reply("{final} has caught a SHINY " + new[0] + "!")
             count=2
         else:
             count=1
