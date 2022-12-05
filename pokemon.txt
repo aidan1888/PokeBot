@@ -28,10 +28,10 @@ Sandshrew 3
 Sandslash 10
 Nidoran♀ 3
 Nidorina 7
-Nidoqueen 25
+Nidoqueen 12
 Nidoran♂ 3
 Nidorino 7
-Nidoking 25
+Nidoking 12
 Clefairy 3
 Clefable 6
 Vulpix 3
