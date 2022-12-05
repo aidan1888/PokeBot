@@ -24,6 +24,12 @@ async def catch(ctx):
         for line in file:
             pokemonList = file.readlines()
         
+    
+
+
+
+
+    
     count=1
     while (count == 1):
         count =1
@@ -37,10 +43,16 @@ async def catch(ctx):
         shiny=num*6
         prob=random.randrange(num)
         if prob == 1 and random.randrange(shiny) != 1:
-            ctx.reply("You have caught " + new[0] + "!")
+            embed=discord.Embed(title=new[0], description=f"You have caught a " + new[0])
+            user = ctx.message.author
+            
+            f = open(user + ".txt", "a")
+            f.append(new[0])
+            await ctx.reply(embed=embed)
+
             count=2
         elif prob == 1 and random.randrange(shiny) == 1:
-            ctx.reply("You have caught a SHINY " + new[0] + "!")
+            await ctx.reply("You have caught a SHINY " + new[0] + "!")
             count=2
         else:
             count=1
