@@ -1,6 +1,5 @@
 import discord
 import random
-from discord import app_commands
 from discord.ext import commands
 TOKEN = ""
 
@@ -10,7 +9,7 @@ with open("TOKEN.txt", "r") as file:
 class Bot(commands.Bot):
     def __init__(self):
         intents = discord.Intents.default()
-        intents.message_content = True
+        #intents.messages_content = True
         super().__init__(command_prefix="!", intents=intents)
 
 bot = Bot()
@@ -38,10 +37,13 @@ async def catch(ctx):
         shiny=num*6
         prob=random.randrange(num)
         if prob == 1 and random.randrange(shiny) != 1:
-            print("You have caught " + new[0] + "!")
+            ctx.reply("You have caught " + new[0] + "!")
             count=2
         elif prob == 1 and random.randrange(shiny) == 1:
-            print("You have caught a SHINY " + new[0] + "!")
+            ctx.reply("You have caught a SHINY " + new[0] + "!")
             count=2
         else:
             count=1
+
+
+bot.run(TOKEN)
