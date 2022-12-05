@@ -48,7 +48,8 @@ async def catch(ctx):
         name = ctx.message.author
         name = str(name)
         long = len(name)
-        name = name[4:len]
+        long = int(long)
+        name = name[4:long]
         count=0
         
 
