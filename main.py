@@ -39,20 +39,28 @@ async def catch(ctx):
             num=new[1]
         elif len(new) == 3:
             num=new[2]
+        elif len(new) == 4:
+            num=new[2]
         num=int(num)
         shiny=num*6
+        user = ctx.message.author
+        count=0
+        while count<5:
+            user = user[:-1]
+            count+=1
+        
         prob=random.randrange(num)
         if prob == 1 and random.randrange(shiny) != 1:
-            embed=discord.Embed(title=new[0], description=f"You have caught a " + new[0])
-            user = ctx.message.author
+            embed=discord.Embed(title=new[0], description= f"{user} has caught " + new[0] + "!")
             
-            f = open(user + ".txt", "a")
-            f.append(new[0])
+            
+            #f = open(user + ".txt", "a")
+            #f.append(new[0])
             await ctx.reply(embed=embed)
 
             count=2
         elif prob == 1 and random.randrange(shiny) == 1:
-            await ctx.reply("You have caught a SHINY " + new[0] + "!")
+            await ctx.reply("{user} has caught a SHINY " + new[0] + "!")
             count=2
         else:
             count=1
