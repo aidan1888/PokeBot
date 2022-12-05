@@ -62,7 +62,7 @@ Poliwhirl 8
 Poliwrath 10
 Abra 5
 Kadabra 9
-Alakazam 18
+Alakazam 15
 Machop 3
 Machoke 5
 Machamp 14
@@ -127,8 +127,8 @@ Magmar 12
 Pinsir 8
 Tauros 6
 Magikarp 3
-Gyarados 18
-Lapras 18
+Gyarados 15
+Lapras 17
 Ditto 16
 Eevee 4
 Vaporeon 10
@@ -242,7 +242,7 @@ Miltank 5
 Blissey 4
 Raikou 16
 Entei 16
-Suicune 18
+Suicune 17
 Larvitar 4
 Pupitar 8
 Tyranitar 12
