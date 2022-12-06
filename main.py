@@ -61,7 +61,7 @@ async def catch(ctx):
             file = open("PokeDex.txt", "r")
             list = file.readlines()
             file.close()
-            list.append(name + "-" + new[0])
+            list.append(name + "-" + new[0] + "\n")
 
 
             my_file = "PokeDex.txt"
@@ -72,6 +72,7 @@ async def catch(ctx):
             while z != v:
                 file.write(list[z])
                 z+=1
+            file.close()
             await ctx.reply(list)
                 
             
@@ -93,7 +94,32 @@ async def catch(ctx):
 
             count=2
         elif prob == 1 and random.randrange(shiny) == 1:
-            await ctx.reply("{name} has caught a SHINY " + new[0] + "!")
+
+            embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY" + new[0] + "!")
+            shinylist = ["\n"]
+            file = open("ShinyDex.txt", "r")
+            shinylist = file.readlines()
+            file.close()
+            shinylist.append(name + "-*" + new[0] + "*\n")
+
+
+            myFile = "ShinyDex.txt"
+            file = open(my_file, "w")
+            z= 0
+            v = len(shinylist)
+            st=""
+            while z != v:
+                file.write(shinylist[z])
+                z+=1
+            file.close()
+            await ctx.reply(shinylist)
+
+
+
+
+
+
+            await ctx.reply(embed=embed)
             count=2
         else:
             count=1
