@@ -1,6 +1,7 @@
 import discord
 import random
 import csv
+from collections import defaultdict
 from discord.ext import commands
 TOKEN = ""
 
@@ -56,36 +57,24 @@ async def catch(ctx):
         prob=random.randrange(num)
         if prob == 1 and random.randrange(shiny) != 1:
             embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
+            list = ["aidan1888-Pikachu"]
+            file = open("PokeDex.txt", "r")
+            list = file.readlines()
+            file.close()
+            list.append(name + "-" + new[0])
+
+
+            my_file = "PokeDex.txt"
+            file = open(my_file, "w")
+            z= 0
+            v = len(list)
+            st=""
+            while z != v:
+                file.write(list[z])
+                z+=1
+            await ctx.reply(list)
+                
             
-            list = []
-            with open("PokeDex.csv", newline="") as file:
-                reader = csv.reader(file)
-                for row in reader:
-                    i = 1
-                    if row[0] == user:
-                        for sen in row:
-                            list += (sen)
-
-                        list += (new[0] + ", ")
-                        
-                    elif (row[0] != user and i < len(row)):
-                        i +=1
-                    elif (row[0] != user and i == len(row)):
-                        list = (name + ", ")
-                        i = 1
-                        for sen in row:
-                            list += (sen)
-                        list += (new[0] + ", ")
-
-
-            
-            file = open("PokeDex.csv", "w")
-            writer = csv.writer(file)
-            for row in reader:
-                    if row[0] == user:
-                        writer.writerow(list)
-
-            await ctx.reply(str(list))
 
 
 
@@ -99,6 +88,7 @@ async def catch(ctx):
                     
                     
             #f.write(new[0])
+            count = 2
             await ctx.reply(embed=embed)
 
             count=2
