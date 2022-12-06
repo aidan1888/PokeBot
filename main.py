@@ -17,8 +17,16 @@ class Bot(commands.Bot):
 bot = Bot()
 
 @bot.event
-async def on_ready():
+async def on_join(ctx):
+    await ctx.message.send("I'm back online!")
+
+
+@bot.event
+async def on_ready(ctx):
     print(f"We have logged in as {bot.user}")
+    channel = bot.get_channel(1049215170351747074)
+
+    await channel.send("I'm back online!")
 
 @bot.group(with_app_command=True)
 async def catch(ctx):
