@@ -49,7 +49,6 @@ async def catch(ctx):
         
         prob=random.randrange(num)
         if prob == 1 and random.randrange(shiny) != 1:
-            embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
             list = ["aidan1888-Pikachu"]
             file = open("PokeDex.txt", "r")
             list = file.readlines()
@@ -67,7 +66,9 @@ async def catch(ctx):
                 z+=1
             file.close()
             await ctx.reply(list)
-          
+            embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
+            
+            
             await ctx.reply(embed=embed)
 
             count=2
@@ -91,8 +92,11 @@ async def catch(ctx):
                 z+=1
             file.close()
             await ctx.reply(shinylist)
-
-            await ctx.reply(embed=embed)
+            file = discord.File("C:/Users/aidan/Desktop/PokeBot/shiny.png", filename="shiny.png")
+            embed.set_image(url="attachment://shiny.png")
+            
+            await ctx.reply(file=file, embed=embed)
+            
             count=2
         else:
             count=1
