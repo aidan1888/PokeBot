@@ -65,7 +65,9 @@ async def catch(ctx):
                 file.write(list[z])
                 z+=1
             file.close()
-            await ctx.reply(list)
+
+            #await ctx.reply(list)
+
             embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
             embed.set_image(url="attachment://" + new[0] + ".png")
@@ -103,6 +105,8 @@ async def catch(ctx):
             count=2
         else:
             count=1
+
+            
 @bot.group(with_app_command=True)
 async def Pokedex(ctx):
     user = ctx.message.author
