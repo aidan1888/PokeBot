@@ -3,6 +3,9 @@ import random
 import csv
 from collections import defaultdict
 from discord.ext import commands
+
+client = discord.Client()
+
 TOKEN = ""
 
 with open("TOKEN.txt", "r") as file:
@@ -16,17 +19,20 @@ class Bot(commands.Bot):
 
 bot = Bot()
 
-@bot.event
-async def on_join(ctx):
-    await ctx.message.send("I'm back online!")
+pfp_path = "C:/Users/aidan/Desktop/PokeBot/pokeball.png"
+fp = open(pfp_path, 'rb')
+pfp = fp.read()
 
 
 @bot.event
-async def on_ready(ctx):
+async def on_ready():
     print(f"We have logged in as {bot.user}")
     channel = bot.get_channel(1049215170351747074)
 
     await channel.send("I'm back online!")
+    
+    
+    await bot.user.edit(avatar=pfp)
 
 @bot.group(with_app_command=True)
 async def catch(ctx):
