@@ -106,7 +106,7 @@ async def catch(ctx):
         else:
             count=1
 
-            
+
 @bot.group(with_app_command=True)
 async def Pokedex(ctx):
     user = ctx.message.author
@@ -127,12 +127,12 @@ async def Pokedex(ctx):
                 newlist.append(st)
                 caught+=1
     
-    embed=discord.Embed(title="--------PokeDex--------", description= f" has caught by {name}\n".join(newlist) + " has been caught by " + name + " so far.")
+    embed=discord.Embed(title="------------PokeDex------------", description= f" has caught by {name}\n".join(newlist) + " has been caught by " + name + " so far.")
     file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="dex.png")
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="--------Catch History--------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/905.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------------Catch History------------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/905.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 @bot.group(with_app_command=True)
@@ -155,15 +155,15 @@ async def Shinydex(ctx):
                 newlist.append(st)
                 caught+=1
     if newlist ==[]:
-        embed=discord.Embed(title="Shiny PokeDex", description= f" You have not caught any shinies yet.")
+        embed=discord.Embed(title="------======Shiny PokeDex======------", description= f" You have not caught any shinies yet.")
     else:
-        embed=discord.Embed(title="Shiny PokeDex", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
+        embed=discord.Embed(title="------======Shiny PokeDex======------", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
         
     file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shiny.png")
     embed.set_image(url="attachment://shinydex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="--------Catch History--------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/905 shninies.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------======Catch History======------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/905 shninies.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 

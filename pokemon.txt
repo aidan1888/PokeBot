@@ -96,7 +96,7 @@ Onix 6
 Drowzee 4
 Hypno 8
 Krabby 2
-Kingler7
+Kingler 7
 Voltorb 3
 Electrode 8
 Exeggcute 5
