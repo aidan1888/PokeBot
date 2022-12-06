@@ -25,13 +25,6 @@ async def catch(ctx):
     with open("pokemon.txt") as file:
         for line in file:
             pokemonList = file.readlines()
-        
-    
-
-
-
-
-    
     count=1
     final =""
     name = ""
@@ -74,22 +67,7 @@ async def catch(ctx):
                 z+=1
             file.close()
             await ctx.reply(list)
-                
-            
-
-
-
-            
-                    
-
-
-                    
-
-
-                    
-                    
-            #f.write(new[0])
-            count = 2
+          
             await ctx.reply(embed=embed)
 
             count=2
@@ -113,11 +91,6 @@ async def catch(ctx):
                 z+=1
             file.close()
             await ctx.reply(shinylist)
-
-
-
-
-
 
             await ctx.reply(embed=embed)
             count=2
