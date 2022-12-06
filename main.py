@@ -108,20 +108,25 @@ async def Pokedex(ctx):
     file = open("PokeDex.txt", "r")
     list = file.readlines()
     newlist = []
+    caught=0
+    total=0
     nLen=len(name) + 1
     for st in list:
         if st.startswith(name) and st not in newlist:
+            total+=1
             st=st[nLen:]
             st=st.strip("\n")   
             if st not in newlist:
                 newlist.append(st)
+                caught+=1
     
-    embed=discord.Embed(title="PokeDex", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
+    embed=discord.Embed(title="--------PokeDex--------", description= f" has caught by {name}\n".join(newlist) + " has been caught by " + name + " so far.")
     file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="shiny.png")
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
-
+    embed=discord.Embed(title="--------Catch History--------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/905.\nGotta catch 'em all!")
+    await ctx.reply(embed=embed)
 
 @bot.group(with_app_command=True)
 async def Shinydex(ctx):
@@ -132,16 +137,21 @@ async def Shinydex(ctx):
     list = file.readlines()
     newlist = []
     nLen=len(name) + 1
+    caught=0
     for st in list:
         if st.startswith(name) and st not in newlist:
             st=st[nLen:]
             st=st.strip("\n")   
             if st not in newlist:
                 newlist.append(st)
-    
-    embed=discord.Embed(title="Shiny PokeDex", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
-    file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="shiny.png")
-    embed.set_image(url="attachment://dex.png")
+                caught+=1
+    if newlist ==[]:
+        embed=discord.Embed(title="Shiny PokeDex", description= f" You have not caught any shinies yet.")
+    else:
+        embed=discord.Embed(title="Shiny PokeDex", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
+
+    file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shiny.png")
+    embed.set_image(url="attachment://shinydex.png")
             
     await ctx.reply(file=file, embed=embed)
 
