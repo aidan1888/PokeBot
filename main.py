@@ -67,9 +67,12 @@ async def catch(ctx):
             file.close()
             await ctx.reply(list)
             embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
+            file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
+            embed.set_image(url="attachment://" + new[0] + ".png")
+
             
             
-            await ctx.reply(embed=embed)
+            await ctx.reply(file=file, embed=embed)
 
             count=2
         elif prob == 1 and random.randrange(shiny) == 1:
@@ -121,7 +124,7 @@ async def Pokedex(ctx):
                 caught+=1
     
     embed=discord.Embed(title="--------PokeDex--------", description= f" has caught by {name}\n".join(newlist) + " has been caught by " + name + " so far.")
-    file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="shiny.png")
+    file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="dex.png")
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
@@ -138,8 +141,10 @@ async def Shinydex(ctx):
     newlist = []
     nLen=len(name) + 1
     caught=0
+    total=0
     for st in list:
         if st.startswith(name) and st not in newlist:
+            total+=1
             st=st[nLen:]
             st=st.strip("\n")   
             if st not in newlist:
@@ -149,11 +154,13 @@ async def Shinydex(ctx):
         embed=discord.Embed(title="Shiny PokeDex", description= f" You have not caught any shinies yet.")
     else:
         embed=discord.Embed(title="Shiny PokeDex", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
-
+        
     file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shiny.png")
     embed.set_image(url="attachment://shinydex.png")
             
     await ctx.reply(file=file, embed=embed)
+    embed=discord.Embed(title="--------Catch History--------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/905 shninies.\nGotta catch 'em all!")
+    await ctx.reply(embed=embed)
 
 
 bot.run(TOKEN)
