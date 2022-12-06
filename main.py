@@ -101,7 +101,7 @@ async def catch(ctx):
         else:
             count=1
 @bot.group(with_app_command=True)
-async def PokeDex(ctx):
+async def Pokedex(ctx):
     user = ctx.message.author
     name = str(user)
     name = name[:-5]
@@ -121,7 +121,29 @@ async def PokeDex(ctx):
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
+
+
+@bot.group(with_app_command=True)
+async def Shinydex(ctx):
+    user = ctx.message.author
+    name = str(user)
+    name = name[:-5]
+    file = open("ShinyDex.txt", "r")
+    list = file.readlines()
+    newlist = []
+    nLen=len(name) + 1
+    for st in list:
+        if st.startswith(name) and st not in newlist:
+            st=st[nLen:]
+            st=st.strip("\n")   
+            if st not in newlist:
+                newlist.append(st)
     
+    embed=discord.Embed(title="Shiny PokeDex", description= f" has caught by {name}\n".join(newlist) + "has been caught by {name} so far.")
+    file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="shiny.png")
+    embed.set_image(url="attachment://dex.png")
+            
+    await ctx.reply(file=file, embed=embed)
 
 
 bot.run(TOKEN)
