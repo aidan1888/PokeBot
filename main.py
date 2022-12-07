@@ -62,7 +62,7 @@ async def catch(ctx):
 
         
         prob=random.randrange(num)
-        if prob == 1 and random.randrange(shiny) != 1:
+        if prob == 1 and random.randrange(shiny) != 1 and new[0] != "Nothing":
             list = ["aidan1888-Pikachu"]
             file = open("PokeDex.txt", "r")
             list = file.readlines()
@@ -91,7 +91,7 @@ async def catch(ctx):
             await ctx.reply(file=file, embed=embed)
 
             count=2
-        elif prob == 1 and random.randrange(shiny) == 1:
+        elif prob == 1 and random.randrange(shiny) == 1 and new[0] != "Nothing":
 
             embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY" + new[0] + "!")
             shinylist = ["\n"]
@@ -117,6 +117,19 @@ async def catch(ctx):
             await ctx.reply(file=file, embed=embed)
             
             count=2
+
+        elif new[0] == "Nothing":
+            embed=discord.Embed(title=new[0], description= f"{name} caught " + new[0] + "!")
+            file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
+            embed.set_image(url="attachment://" + new[0] + ".png")
+            await ctx.reply(file=file, embed=embed)
+
+        elif prob != 1:
+            embed=discord.Embed(title=new[0] + " has fled!!", description= f"{name} almost caught " + new[0] + ", but it fled!")
+            file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
+            embed.set_image(url="attachment://" + new[0] + ".png")
+            await ctx.reply(file=file, embed=embed)
+
         else:
             count=1
 
@@ -136,17 +149,17 @@ async def pokedex(ctx):
         if st.startswith(name) and st not in newlist:
             total+=1
             st=st[nLen:]
-            st=st.strip("\n")   
+            st=st.strip("\n")
             if st not in newlist:
                 newlist.append(st)
                 caught+=1
     
-    embed=discord.Embed(title="------------PokeDex------------", description= f" has caught by {name}\n".join(newlist) + " has been caught by " + name + " so far.")
+    embed=discord.Embed(title="---------PokeDex---------", description= f" has caught by {name}\n".join(newlist) + " has been caught by " + name + " so far.")
     file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="dex.png")
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="------------Catch History------------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/905.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/905.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 @bot.group(with_app_command=True)
@@ -164,7 +177,7 @@ async def Shinydex(ctx):
         if st.startswith(name) and st not in newlist:
             total+=1
             st=st[nLen:]
-            st=st.strip("\n")   
+            st=st.strip("\n")
             if st not in newlist:
                 newlist.append(st)
                 caught+=1

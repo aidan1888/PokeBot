@@ -17,6 +17,7 @@ Pidgey 3
 Pidgeotto 5
 Pidgeot 10
 Rattata 3
+Nothing 1
 Raticate 10
 Spearow 3
 Fearow 12
@@ -166,6 +167,7 @@ Ledyba 4
 Ledian 6
 Spinarak 3
 Ariados 8
+Nothing 1
 Crobat 12
 Chinchou 4
 Lanturn 12
@@ -265,6 +267,7 @@ Linoone 8
 Wurmple 3
 Silcoon 5
 Beautifly 8
+Nothing 1
 Cascoon 5
 Dustox 8
 Lotad 3
@@ -413,6 +416,7 @@ Burmy 3
 Wormadam 4
 Mothim 5
 Combee 4
+Nothing 1
 Vespiquen 7
 Pachirisu 8
 Buizel 4
@@ -434,6 +438,7 @@ Chingling 4
 Stunky 5
 Skuntank 8
 Bronzor 3
+Nothing 1
 Bronzong 7
 Bonsly 4
 Mime-Jr. 8
@@ -463,6 +468,7 @@ Magnezone 10
 Lickilicky 9
 Rhyperior 12
 Tangrowth 12
+Nothing 1
 Electivire 9
 Magmortar 12
 Togekiss 12
@@ -491,6 +497,7 @@ Manaphy 12
 Darkrai 15
 Shaymin 15
 Arceus 18
+Nothing 1
 Victini 14
 Snivy 4
 Servine 7 
@@ -504,6 +511,7 @@ Samurott 9
 Patrat 3
 Watchog 5
 Lillipup 3
+Nothing 1
 Herdier 6
 Stoutland 8
 Purrloin 4
@@ -546,6 +554,7 @@ Scolipede 8
 Cottonee 5
 Whimsicott 7
 Petilil 4
+Nothing 1
 Lilligant 6
 Basculin 7
 Sandile 4
@@ -575,6 +584,7 @@ Gothita 4
 Gothorita 6
 Gothitelle 8
 Solosis 4
+Nothing 1
 Duosion 7
 Reuniclus 7
 Ducklett 4
@@ -657,6 +667,7 @@ Froakie 4
 Frogadier 7
 Greninja 9
 Bunnelby 3
+Nothing 1
 Diggersby 6
 Fletchling 3
 Fletchinder 6
@@ -720,6 +731,7 @@ Diancie 12
 Hoopa 12
 Volcanion 11
 Rowlet 5
+Nothing 1
 Dartrix 6
 Decidueye 9
 Litten 3
@@ -769,7 +781,7 @@ Golisopod 10
 Sandygast 7
 Palossand 9
 Pyukumuku 8
-Type:Null 12 
+Type-Null 12 
 Silvally 7
 Minior 5
 Komala 7
@@ -791,6 +803,7 @@ Cosmoem 12
 Solgaleo 14
 Lunala 14
 Nihilego 14
+Nothing 1
 Buzzwole 14
 Pheromosa 14
 Xurkitree 14
@@ -833,6 +846,7 @@ Dubwool 7
 Chewtle 3
 Drednaw 6
 Yamper 4
+Nothing 1
 Boltund 7
 Rolycoly 6
 Carkol 8
@@ -898,6 +912,7 @@ Spectrier 13
 Calyrex 13
 Wyrdeer 8
 Kleavor 9
+Nothing 1
 Ursaluna 12
 Basculegion 9
 Sneasler 10
