@@ -553,3 +553,7 @@ krommmmstin-Arctozolt
 krommmmstin-Cramorant
 krommmmstin-Lycanroc
 krommmmstin-Phantump
+krommmmstin-Magikarp
+krommmmstin-Ditto
+krommmmstin-Foongus
+krommmmstin-Mareep
