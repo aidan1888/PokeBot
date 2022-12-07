@@ -62,7 +62,7 @@ async def catch(ctx):
 
         
         prob=random.randrange(num)
-        if prob == 1 and random.randrange(shiny) != 1 and new[0] != "Nothing":
+        if prob == 1 and random.randrange(shiny) != 1 and new[0] != "nothing":
             list = ["aidan1888-Pikachu"]
             file = open("PokeDex.txt", "r")
             list = file.readlines()
@@ -91,7 +91,7 @@ async def catch(ctx):
             await ctx.reply(file=file, embed=embed)
 
             count=2
-        elif prob == 1 and random.randrange(shiny) == 1 and new[0] != "Nothing":
+        elif prob == 1 and random.randrange(shiny) == 1 and new[0] != "nothing":
 
             embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY" + new[0] + "!")
             shinylist = ["\n"]
@@ -118,7 +118,7 @@ async def catch(ctx):
             
             count=2
 
-        elif new[0] == "Nothing":
+        elif new[0] == "nothing":
             embed=discord.Embed(title=new[0], description= f"{name} caught " + new[0] + "!")
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
             embed.set_image(url="attachment://" + new[0] + ".png")
