@@ -126,8 +126,8 @@ async def catch(ctx):
 
         elif prob != 1:
             embed=discord.Embed(title=new[0] + " has fled!!", description= f"{name} almost caught " + new[0] + ", but it fled!")
-            file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
-            embed.set_image(url="attachment://" + new[0] + ".png")
+            file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/fled.gif", filename="fled.gif")
+            embed.set_image(url="attachment://fled.gif")
             await ctx.reply(file=file, embed=embed)
 
         else:
