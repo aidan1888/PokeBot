@@ -6,7 +6,8 @@ aidan1888-Swadloon
 aidan1888-Pansage
 aidan1888-Cherubi
 aidan1888-Chansey
-aidan1888-Chanseyaidan1888-Silicobra
+aidan1888-Chansey
+aidan1888-Silicobra
 krommmmstin-Araquanid
 krommmmstin-Magikarp
 aidan1888-Politoed
@@ -311,7 +312,6 @@ yems123-Marill
 yems123-Popplio
 yems123-Dreepy
 yems123-Grumpig
-
 krommmmstin-Riolu
 krommmmstin-Espurr
 krommmmstin-Ducklett
@@ -602,3 +602,16 @@ krommmmstin-Dwebble
 krommmmstin-Gourgeist
 krommmmstin-Stunfisk
 krommmmstin-Leafeon
+krommmmstin-Celesteela
+krommmmstin-Stantler
+krommmmstin-Bewear
+krommmmstin-Yanma
+krommmmstin-Crawdaunt
+krommmmstin-Pincurchin
+krommmmstin-Tepig
+krommmmstin-Braviary
+krommmmstin-Vibrava
+krommmmstin-Shinx
+krommmmstin-Ribombee
+krommmmstin-Doublade
+krommmmstin-Heatmor

@@ -35,6 +35,35 @@ async def on_ready():
     await bot.user.edit(avatar=pfp)
 
 @bot.group(with_app_command=True)
+async def name(ctx, arg):
+    
+    nameLen = len(arg)
+    user = ctx.message.author
+    name = str(user)
+    name = name[:-5]
+    file = open("PokeDex.txt", "r")
+    list = file.readlines()
+    newlist = []
+    total=0
+    nLen=len(name) + 1
+    for st in list:
+        if st.startswith(arg):
+            total+=1
+            st=st[nameLen:]
+            st=name + st
+
+    my_file = "PokeDex.txt"
+    file = open(my_file, "w")
+    z= 0
+    v = len(list)
+    st=""
+    while z != v:
+        file.write(list[z])
+        z+=1
+    file.close()
+
+
+@bot.group(with_app_command=True)
 async def catch(ctx):
     with open("pokemon.txt") as file:
         for line in file:
