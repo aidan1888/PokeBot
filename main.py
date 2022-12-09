@@ -32,7 +32,7 @@ async def on_ready():
     await channel.send("I'm back online!")
     
     
-    await bot.user.edit(avatar=pfp)
+    #await bot.user.edit(avatar=pfp)
 
 @bot.group(with_app_command=True)
 async def name(ctx, arg):
@@ -82,7 +82,7 @@ async def catch(ctx):
         elif len(new) == 4:
             num=new[2]
         num=int(num)
-        shiny=num*6
+        shiny= num *6
         user = ctx.message.author
         name = str(user)
         name = name[:-5]
@@ -91,7 +91,11 @@ async def catch(ctx):
 
         
         prob=random.randrange(num)
-        if prob == 1 and random.randrange(shiny) != 1 and new[0] != "nothing":
+        shinyProb = random.randrange(int(shiny))
+        
+
+
+        if prob == 1 and shinyProb > 1 and new[0] != "nothing":
             list = ["aidan1888-Pikachu"]
             file = open("PokeDex.txt", "r")
             list = file.readlines()
@@ -120,18 +124,18 @@ async def catch(ctx):
             await ctx.reply(file=file, embed=embed)
 
             count=2
-        elif prob == 1 and random.randrange(shiny) == 1 and new[0] != "nothing":
+        elif shinyProb < 2 and prob == 1 and new[0] != "nothing":
 
-            embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY" + new[0] + "!")
+            embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY " + new[0] + "!")
             shinylist = ["\n"]
             file = open("ShinyDex.txt", "r")
             shinylist = file.readlines()
             file.close()
-            shinylist.append(name + "-*" + new[0] + "*\n")
+            shinylist.append(name + "-*" + new[0] + "\n")
 
 
             myFile = "ShinyDex.txt"
-            file = open(my_file, "w")
+            file = open(myFile, "w")
             z= 0
             v = len(shinylist)
             st=""
@@ -153,7 +157,7 @@ async def catch(ctx):
             embed.set_image(url="attachment://" + new[0] + ".png")
             await ctx.reply(file=file, embed=embed)
 
-        elif prob != 1:
+        elif prob != 1 and shinyProb != 1:
             embed=discord.Embed(title=new[0] + " has fled!!", description= f"{name} almost caught " + new[0] + ", but it fled!")
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/fled.gif", filename="fled.gif")
             embed.set_image(url="attachment://fled.gif")
@@ -192,7 +196,7 @@ async def pokedex(ctx):
     await ctx.reply(embed=embed)
 
 @bot.group(with_app_command=True)
-async def Shinydex(ctx):
+async def shinydex(ctx):
     user = ctx.message.author
     name = str(user)
     name = name[:-5]
@@ -213,7 +217,7 @@ async def Shinydex(ctx):
     if newlist ==[]:
         embed=discord.Embed(title="------======Shiny PokeDex======------", description= f" You have not caught any shinies yet.")
     else:
-        embed=discord.Embed(title="------======Shiny PokeDex======------", description= f" has been caught by {name}\n".join(newlist) + "has been caught by {name}.")
+        embed=discord.Embed(title="------======Shiny PokeDex======------", description= f" has been caught by {name}\n".join(newlist) + " has been caught by " + name + ".")
         
     file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shinydex.png")
     embed.set_image(url="attachment://shinydex.png")
