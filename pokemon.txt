@@ -352,6 +352,9 @@ Armaldo 9
 Feebas 4
 Milotic 13
 Castform 3
+Rain-Castform 4
+Fire-Castform 4
+Snow-Castform 4
 Kecleon 8
 Shuppet 4
 Banette 5
@@ -496,6 +499,7 @@ Phione 12
 Manaphy 12
 Darkrai 15
 Shaymin 15
+Shaymin-sky 15
 Arceus 18
 nothing 1
 Victini 14
