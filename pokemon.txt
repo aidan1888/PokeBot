@@ -27,10 +27,10 @@ Pikachu 5
 Raichu 15
 Sandshrew 3
 Sandslash 10
-Nidoran-f 3
+Nidoran♀ 3
 Nidorina 7
 Nidoqueen 12
-Nidoran-m 3
+Nidoran♂ 3
 Nidorino 7
 Nidoking 12
 Clefairy 3
