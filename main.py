@@ -144,8 +144,8 @@ async def catch(ctx):
                 z+=1
             file.close()
             await ctx.reply(shinylist)
-            file = discord.File("C:/Users/aidan/Desktop/PokeBot/shiny.png", filename="shiny.png")
-            embed.set_image(url="attachment://shiny.png")
+            file=discord.File("C:/Users/aidan/Desktop/PokeBot/shiny/" + new[0] + ".png", filename=new[0] + ".png")
+            embed.set_image(url="attachment://" + new[0] + ".png")
             
             await ctx.reply(file=file, embed=embed)
             
