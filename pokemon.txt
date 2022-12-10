@@ -922,39 +922,38 @@ Basculegion 9
 Sneasler 10
 Overqwil 8
 Enamorus 14
-
-Sprigatito
-Floragato
-Meowscarada
-Fuecoco
-Crocalor
-Skeledirge
-Quaxly
-Quaxwell
-Quaquaval
-Lechonk
-Oinkologne
-Tarountula
-Spidops
-Nymble
+Sprigatito 3
+Floragato 8
+Meowscarada 12
+Fuecoco 3
+Crocalor 8
+Skeledirge 12
+Quaxly 3
+Quaxwell 8
+Quaquaval 12
+Lechonk 3
+Oinkologne 7
+Tarountula 4
+Spidops 7
+Nymble 
 Lokix
-Pawmi
-Pawmo
-Pawmot
-Tandemaus
-Maushold
-Fidough
-Dachsbun
-Smoliv
-Dolliv
-Arboliva
+Pawmi 3
+Pawmo 8
+Pawmot 12
+Tandemaus 4
+Maushold 10
+Fidough 3
+Dachsbun 8
+Smoliv 4
+Dolliv 8
+Arboliva 12
 Squawkabilly
-Nacli
-Naclstack
-Garganacl
-Charcadet
-Armarouge
-Ceruledge
+Nacli 3
+Naclstack 8
+Garganacl 12
+Charcadet 
+Armarouge 18
+Ceruledge 18
 Tadbulb
 Bellibolt
 Wattrel
@@ -974,20 +973,20 @@ Rellor
 Rabsca
 Flittle
 Espathra
-Tinkatink
-Tinkatuff
-Tinkaton
-Wiglett
-Wugtrio
+Tinkatink 4
+Tinkatuff 8
+Tinkaton 13
+Wiglett 5
+Wugtrio 9
 Bombirdier
 Finizen
 Palafin
 Varoom
 Revavroom
-Cyclizar
-Orthworm
-Glimmet
-Glimmora
+Cyclizar 7
+Orthworm 13
+Glimmet 5
+Glimmora 9
 Greavard
 Houndstone
 Flamigo
@@ -999,7 +998,7 @@ Tatsugiri
 Annihilape
 Clodsire
 Farigiraf
-Dudunsparce
+Dudunsparce 14
 Kingambit
 Great-Tusk
 Scream-Tail
@@ -1024,5 +1023,5 @@ Ting-Lu
 Chi-Yu
 Roaring-Moon
 Iron-Valiant
-Koraidon
-Miraidon
+Koraidon 20
+Miraidon 20
