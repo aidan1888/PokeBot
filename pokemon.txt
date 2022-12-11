@@ -20,38 +20,39 @@ Rattata 3
 nothing 1
 Raticate 10
 Spearow 3
-Fearow 12
+Fearow 10
 Ekans 3
 Arbok 10
 Pikachu 5
-Raichu 15
+Raichu 10
 Sandshrew 3
 Sandslash 10
 Nidoran♀ 3
-Nidorina 7
-Nidoqueen 12
+Nidorina 6
+Nidoqueen 10
 Nidoran♂ 3
-Nidorino 7
-Nidoking 12
+Nidorino 6
+Nidoking 10
 Clefairy 3
 Clefable 6
 Vulpix 3
-Ninetales 15
+Ninetales 12
 Jigglypuff 5
-Wigglytuff 12
+Wigglytuff 10
 Zubat 3
 Golbat 7
 Oddish 3
 Gloom 7
-Vileplume 17
+Vileplume 10
 Paras 3
-Parasect 13
-Venonat 8
-Venomoth 16
+Parasect 10
+Venonat 6
+Venomoth 12
 Diglett 3
 Dugtrio 7
 Meowth 3
-Persian 9
+Galarian-Meowth 5
+Persian 10
 Psyduck 3
 Golduck 7
 Mankey 3
@@ -66,22 +67,27 @@ Kadabra 9
 Alakazam 15
 Machop 3
 Machoke 5
-Machamp 14
+Machamp 12
 Bellsprout 3
-Weepinbell 8
-Victreebel 16
+Weepinbell 7
+Victreebel 10
 Tentacool 4
-Tentacruel 13
+Tentacruel 10
 Geodude 4
-Graveler 9
-Golem 14
+Graveler 8
+Golem 12
 Ponyta 5
-Rapidash 15
+Galarian-Ponyta 7
+Rapidash 10
+Galarian-Rapidash 12
 Slowpoke 4
+Galarian-Slowpoke 6
 Slowbro 8
+Galarian-Slowbro 9
 Magnemite 3
 Magneton 8
 Farfetchd 5
+Galarian-Farfetchd 7
 Doduo 3
 Dodrio 7
 Seel 3
@@ -92,7 +98,7 @@ Shellder 8
 Cloyster 10
 Gastly 5
 Haunter 9
-Gengar 15
+Gengar 12
 Onix 6
 Drowzee 4
 Hypno 8
@@ -101,7 +107,7 @@ Kingler 7
 Voltorb 3
 Electrode 8
 Exeggcute 5
-Exeggutor 14
+Exeggutor 12
 Cubone 3
 Marowak 8
 Hitmonlee 12
@@ -109,26 +115,28 @@ Hitmonchan 12
 Lickitung 4
 Koffing 6
 Weezing 12
+Galarian-Weezing 13
 Rhyhorn 5
 Rhydon 10
 Chansey 3
-Tangela 3
+Tangela 4
 Kangaskhan 6
 Horsea 3
-Seadra 3
+Seadra 8
 Goldeen 3
-Seaking 12
+Seaking 10
 Staryu 3
 Starmie 7
 Mr.Mime 12
+Galarian-Mr.Mime 13
 Scyther 5
-Jynx 12
-Electabuzz 12
-Magmar 12
+Jynx 8
+Electabuzz 8
+Magmar 8
 Pinsir 8
 Tauros 6
-Magikarp 3
-Gyarados 15
+Magikarp 2
+Gyarados 12
 Lapras 17
 Ditto 16
 Eevee 4
@@ -143,11 +151,14 @@ Kabutops 7
 Aerodactyl 14
 Snorlax 16
 Articuno 16
+Galarian-Articuno 20
 Zapdos 16
+Galarian-Zapdos 20
 Moltres 16
+Galarian-Moltres 20
 Dratini 4
 Dragonair 7
-Dragonite 13
+Dragonite 15
 Mewtwo 20
 Mew 20
 Chikorita 4
@@ -155,23 +166,23 @@ Bayleef 7
 Meganium 12
 Cyndaquil 3
 Quilava 7
-Typhlosion 12
+Typhlosion 11
 Totodile 3
 Croconaw 7
 Feraligatr 10
 Sentret 3
-Furret 8
+Furret 10
 Hoothoot 5
 Noctowl 10
 Ledyba 4
-Ledian 6
+Ledian 8
 Spinarak 3
 Ariados 8
 nothing 1
 Crobat 12
 Chinchou 4
 Lanturn 12
-Pichu 6
+Pichu 5
 Cleffa 6
 Igglybuff 6
 Togepi 7
@@ -191,7 +202,7 @@ Skiploom 6
 Jumpluff 10
 Aipom 3
 Sunkern 4
-Sunflora 6
+Sunflora 8
 Yanma 4
 Wooper 5
 Quagsire 10
@@ -199,6 +210,7 @@ Espeon 12
 Umbreon 12
 Murkrow 4
 Slowking 12
+Galarian-Slowking 13
 Misdreavus 5
 Unown 18
 Wobbuffet 4
@@ -222,6 +234,7 @@ Magcargo 9
 Swinub 3
 Piloswine 7
 Corsola 5
+Galarian-Corsola 7
 Remoraid 10
 Octillery 7
 Delibird 5
@@ -247,7 +260,7 @@ Entei 17
 Suicune 17
 Larvitar 4
 Pupitar 8
-Tyranitar 12
+Tyranitar 15
 Lugia 17
 Ho-oh 17
 Celebi 18
@@ -263,7 +276,9 @@ Swampert 12
 Poochyena 4
 Mightyena 9
 Zigzagoon 3
+Galarian-Zigzagoon 6
 Linoone 8
+Galarian-Linoone 10
 Wurmple 3
 Silcoon 5
 Beautifly 8
@@ -281,8 +296,8 @@ Swellow 7
 Wingull 3
 Pelipper 8
 Ralts 3
-Kirlia 5
-Gardevoir 9
+Kirlia 6
+Gardevoir 10
 Surskit 4
 Masquerain 7
 Shroomish 4
@@ -298,7 +313,7 @@ Loudred 7
 Exploud 9
 Makuhita 5
 Hariyama 9
-Azurill 8
+Azurill 9
 Nosepass 7
 Skitty 4
 Delcatty 7
@@ -308,7 +323,7 @@ Aron 4
 Lairon 7
 Aggron 12
 Meditite 3
-Medicham 4
+Medicham 8
 Electrike 4
 Manectric 8
 Plusle 9
@@ -318,8 +333,8 @@ Illumise 6
 Roselia 3
 Gulpin 4
 Swalot 6
-Carvanha 9
-Sharpedo 13
+Carvanha 7
+Sharpedo 12
 Wailmer 5
 Wailord 12
 Numel 4
@@ -342,7 +357,7 @@ Solrock 9
 Barboach 5
 Whiscash 9
 Corphish 4
-Crawdaunt 6
+Crawdaunt 8
 Baltoy 5
 Claydol 9
 Lileep 4
@@ -352,9 +367,9 @@ Armaldo 9
 Feebas 4
 Milotic 13
 Castform 3
-Rain-Castform 4
-Fire-Castform 4
-Snow-Castform 4
+Rain-Castform 5
+Fire-Castform 5
+Snow-Castform 5
 Kecleon 8
 Shuppet 4
 Banette 5
@@ -376,10 +391,10 @@ Relicanth 5
 Luvdisc 5
 Bagon 5
 Shelgon 8
-Salamence 14
+Salamence 15
 Beldum 5
 Metang 7
-Metagross 13
+Metagross 15
 Regirock 17
 Regice 17
 Registeel 17
@@ -419,7 +434,6 @@ Burmy 3
 Wormadam 4
 Mothim 5
 Combee 4
-nothing 1
 Vespiquen 7
 Pachirisu 8
 Buizel 4
@@ -433,15 +447,14 @@ Drifloon 5
 Drifblim 9
 Buneary 4
 Lopunny 9
-Mismagius 5
-Honchkrow 8
+Mismagius 8
+Honchkrow 9
 Glameow 4
 Purugly 7
 Chingling 4
 Stunky 5
 Skuntank 8
 Bronzor 3
-nothing 1
 Bronzong 7
 Bonsly 4
 Mime-Jr. 8
@@ -450,7 +463,7 @@ Chatot 4
 Spiritomb 10
 Gible 4
 Gabite 8
-Garchomp 10
+Garchomp 15
 Munchlax 5
 Riolu 8
 Lucario 12
@@ -471,15 +484,14 @@ Magnezone 10
 Lickilicky 9
 Rhyperior 12
 Tangrowth 12
-nothing 1
-Electivire 9
+Electivire 12
 Magmortar 12
 Togekiss 12
 Yanmega 9
-Leafeon 8
-Glaceon 8
+Leafeon 10
+Glaceon 10
 Gliscor 7
-Mamoswine 9
+Mamoswine 10
 Porygon-Z 12
 Gallade 10
 Probopass 10
@@ -501,7 +513,6 @@ Darkrai 16
 Shaymin 16
 Shaymin-sky 16
 Arceus 20
-nothing 1
 Victini 17
 Snivy 4
 Servine 7 
@@ -515,7 +526,6 @@ Samurott 9
 Patrat 3
 Watchog 5
 Lillipup 3
-nothing 1
 Herdier 6
 Stoutland 8
 Purrloin 4
@@ -530,14 +540,14 @@ Munna 6
 Musharna 9
 Pidove 3
 Tranquill 6
-Unfezant 6
+Unfezant 10
 Blitzle 5
-Zebstrika 8
+Zebstrika 10
 Roggenrola 4
 Boldore 7
 Gigalith 9
 Woobat 4
-Swoobat 7
+Swoobat 9
 Drilbur 5
 Excadrill 9
 Audino 4
@@ -553,19 +563,20 @@ Sewaddle 5
 Swadloon 7
 Leavanny 4
 Venipede 4
-Whirlipede 6
-Scolipede 8
+Whirlipede 8
+Scolipede 11
 Cottonee 5
 Whimsicott 7
 Petilil 4
-nothing 1
 Lilligant 6
 Basculin 7
 Sandile 4
-Krokorok 6
-Krookodile 7
+Krokorok 7
+Krookodile 10
 Darumaka 4
+Galarian-Darumaka 6
 Darmanitan 6
+Galarian-Darmanitan 8
 Maractus 5
 Dwebble 4
 Crustle 7
@@ -573,36 +584,36 @@ Scraggy 4
 Scrafty 7
 Sigilyph 7
 Yamask 5
+Galarian-Yamask 8
 Cofagrigus 9
 Tirtouga 6
 Carracosta 8
 Archen 6
-Archeops 7
-Trubbish 6
+Archeops 9
+Trubbish 5
 Garbodor 8
 Zorua 9
 Zoroark 12
-Minccino 8
-Cinccino 9
+Minccino 7
+Cinccino 10
 Gothita 4
 Gothorita 6
-Gothitelle 8
+Gothitelle 10
 Solosis 4
-nothing 1
 Duosion 7
 Reuniclus 7
 Ducklett 4
 Swanna 7
 Vanillite 6
-Vanillish 7
-Vanilluxe 9
+Vanillish 8
+Vanilluxe 10
 Deerling 3
-Sawsbuck 6
+Sawsbuck 8
 Emolga 8
 Karrablast 4
 Escavalier 7
 Foongus 4
-Amoonguss 8
+Amoonguss 9
 Frillish 9
 Jellicent 9
 Alomomola 9
@@ -612,7 +623,7 @@ Ferroseed 8
 Ferrothorn 9
 Klink 4
 Klang 7
-Klinklang 9
+Klinklang 10
 Tynamo 4
 Eelektrik 8
 Eelektross 10
@@ -625,11 +636,12 @@ Axew 7
 Fraxure 9
 Haxorus 13
 Cubchoo 5
-Beartic 7
+Beartic 8
 Cryogonal 9
 Shelmet 4
 Accelgor 6
 Stunfisk 5
+Galarian-Stunfisk 10
 Mienfoo 6
 Mienshao 7
 Druddigon 12
@@ -638,15 +650,15 @@ Golurk 8
 Pawniard 5
 Bisharp 7
 Bouffalant 3
-Rufflet 7
+Rufflet 5
 Braviary 7
 Vullaby 6
 Mandibuzz 8
 Heatmor 7
 Durant 4
-Deino 5
+Deino 7
 Zweilous 9
-Hydreigon 12
+Hydreigon 15
 Larvesta 4
 Volcarona 7
 Cobalion 16
@@ -669,65 +681,64 @@ Braixen 8
 Delphox 12
 Froakie 4
 Frogadier 7
-Greninja 9
+Greninja 12
 Bunnelby 3
-nothing 1
 Diggersby 6
 Fletchling 3
 Fletchinder 6
 Talonflame 9
 Scatterbug 4
 Spewpa 6
-Vivillon 4
+Vivillon 10
 Litleo 3
 Pyroar 5
 Flabebe 6
-Floette 6
-Florges 7
+Floette 8
+Florges 10
 Skiddo 5
 Gogoat 6
 Pancham 5
-Pangoro 6
+Pangoro 9
 Furfrou 5
 Espurr 4
 Meowstic 7
-Honedge 6
+Honedge 5
 Doublade 7
-Aegislash 8
+Aegislash 10
 Spritzee 8
 Aromatisse 8
 Swirlix 4
 Slurpuff 7
 Inkay 6
-Malamar 9
+Malamar 10
 Binacle 5
 Barbaracle 7
 Skrelp 4
-Dragalge 5
+Dragalge 8
 Clauncher 4
-Clawitzer 6
+Clawitzer 8
 Helioptile 4
 Heliolisk 8
 Tyrunt 4
-Tyrantrum 7
+Tyrantrum 9
 Amaura 5
 Aurorus 9
-Sylveon 8
+Sylveon 10
 Hawlucha 6
 Dedenne 8
 Carbink 7
-Goomy 4
-Sliggoo 6
-Goodra 8
+Goomy 5
+Sliggoo 10
+Goodra 15
 Klefki 5
-Phantump 5
-Trevenant 9
+Phantump 6
+Trevenant 10
 Pumpkaboo 5
-Gourgeist 7
+Gourgeist 8
 Bergmite 4
 Avalugg 5
 Noibat 5
-Noivern 7
+Noivern 9
 Xerneas 17
 Yveltal 17
 Zygarde 16
@@ -735,51 +746,50 @@ Diancie 16
 Hoopa 17
 Volcanion 17
 Rowlet 5
-nothing 1
 Dartrix 6
-Decidueye 9
+Decidueye 10
 Litten 3
 Torracat 5
-Incineroar 8
+Incineroar 9
 Popplio 3
 Brionne 7
-Primarina 9
+Primarina 10
 Pikipek 3
 Trumbeak 7
 Toucannon 9
 Yungoos 3
-Gumshoos 6
+Gumshoos 7
 Grubbin 3
 Charjabug 5
-Vikavolt 7
+Vikavolt 10
 Crabrawler 7
 Crabominable 9
 Oricorio 6
 Cutiefly 4
-Ribombee 5
+Ribombee 7
 Rockruff 6
-Lycanroc 7
+Lycanroc 9
 Wishiwashi 4
 Mareanie 6
-Toxapex 6
+Toxapex 8
 Mudbray 5
-Mudsdale 4
+Mudsdale 7
 Dewpider 3
-Araquanid 3
+Araquanid 8
 Fomantis 5
 Lurantis 6
 Morelull 7
-Shiinotic 8
-Salandit 5
-Salazzle 7
+Shiinotic 9
+Salandit 6
+Salazzle 9
 Stufful 3
-Bewear 9
+Bewear 10
 Bounsweet 6
 Steenee 7
 Tsareena 9
 Comfey 6
 Oranguru 4
-Passimian 7
+Passimian 8
 Wimpod 3
 Golisopod 10
 Sandygast 7
@@ -787,7 +797,7 @@ Palossand 9
 Pyukumuku 8
 Type-Null 17
 Silvally 16
-Minior 5
+Minior 8
 Komala 7
 Turtonator 7
 Togedemaru 7
@@ -797,17 +807,16 @@ Drampa 7
 Dhelmise 5
 Jangmo-o 6
 Hakamo-o 7
-Kommo-o 8
+Kommo-o 15
 Tapu-Koko 16
 Tapu-Lele 16
 Tapu-Bulu 16
 Tapu-Fini 16
-Cosmog 15
+Cosmog 13
 Cosmoem 16
 Solgaleo 18
 Lunala 18
 Nihilego 17
-nothing 1
 Buzzwole 16
 Pheromosa 16
 Xurkitree 16
@@ -826,16 +835,16 @@ Meltan 14
 Melmetal 18
 Grookey 4
 Thwackey 6
-Rillaboom 8
+Rillaboom 10
 Scorbunny 3
 Raboot 6
-Cinderace 9
+Cinderace 10
 Sobble 4
-Drizzile 6
-Inteleon 8
+Drizzile 7
+Inteleon 10
 Skwovet 3
-Greedent 5
-Rookidee 7
+Greedent 6
+Rookidee 9
 Corvisquire 5
 Corviknight 9
 Blipbug 4
@@ -850,14 +859,13 @@ Dubwool 7
 Chewtle 3
 Drednaw 6
 Yamper 4
-nothing 1
 Boltund 7
 Rolycoly 6
 Carkol 8
-Coalossal 9
+Coalossal 10
 Applin 4
 Flapple 6
-Appletun 8
+Appletun 9
 Silicobra 5
 Sandaconda 8
 Cramorant 4
@@ -866,7 +874,7 @@ Barraskewda 8
 Toxel 5
 Toxtricity 8
 Sizzlipede 7
-Centiskorch 9
+Centiskorch 10
 Clobbopus 5
 Grapploct 7
 Sinistea 7
@@ -876,8 +884,8 @@ Hattrem 7
 Hatterene 8
 Impidimp 7
 Morgrem 6
-Grimmsnarl 6
-Obstagoon 8
+Grimmsnarl 9
+Obstagoon 10
 Perrserker 8
 Cursola 8
 Sirfetchd 9
@@ -902,7 +910,7 @@ Arctovish 9
 Duraludon 8
 Dreepy 7
 Drakloak 7
-Dragapult 12
+Dragapult 15
 Zacian 14
 Zamazenta 14
 Eternatus 15
@@ -916,13 +924,11 @@ Spectrier 16
 Calyrex 15
 Wyrdeer 8
 Kleavor 9
-nothing 1
 Ursaluna 12
 Basculegion 9
 Sneasler 10
 Overqwil 8
 Enamorus 17
-
 Sprigatito 3
 Floragato 8
 Meowscarada 12
@@ -936,8 +942,8 @@ Lechonk 3
 Oinkologne 7
 Tarountula 4
 Spidops 7
-Nymble 
-Lokix
+Nymble 6
+Lokix 9
 Pawmi 3
 Pawmo 8
 Pawmot 12
@@ -948,81 +954,81 @@ Dachsbun 8
 Smoliv 4
 Dolliv 8
 Arboliva 12
-Squawkabilly
+Squawkabilly 10
 Nacli 3
 Naclstack 8
 Garganacl 12
-Charcadet 
+Charcadet 8
 Armarouge 18
 Ceruledge 18
-Tadbulb
-Bellibolt
-Wattrel
-Kilowattrel
-Maschiff
-Mabosstiff
-Shroodle
-Grafaiai
-Bramblin
-Brambleghast
-Toedscool
-Toedscruel
-Klawf
-Capsakid
-Scovillain
-Rellor
-Rabsca
-Flittle
-Espathra
+Tadbulb 5
+Bellibolt 8
+Wattrel 4
+Kilowattrel 8
+Maschiff 4
+Mabosstiff 8
+Shroodle 5
+Grafaiai 8
+Bramblin 5
+Brambleghast 8
+Toedscool 5
+Toedscruel 8
+Klawf 9
+Capsakid 5
+Scovillain 8
+Rellor 5
+Rabsca 8
+Flittle 6
+Espathra 8
 Tinkatink 4
 Tinkatuff 8
 Tinkaton 13
 Wiglett 5
 Wugtrio 9
-Bombirdier
-Finizen
-Palafin
-Varoom
-Revavroom
+Bombirdier 9
+Finizen 6
+Palafin 9
+Varoom 6
+Revavroom 9
 Cyclizar 7
 Orthworm 13
 Glimmet 5
 Glimmora 9
-Greavard
-Houndstone
-Flamigo
-Cetoddle
-Cetitan
-Veluza
-Dondozo
-Tatsugiri
-Annihilape
-Clodsire
-Farigiraf
+Greavard 6
+Houndstone 8
+Flamigo 7
+Cetoddle 7
+Cetitan 9
+Veluza 7
+Dondozo 9
+Tatsugiri 6
+Annihilape 8
+Clodsire 12
+Farigiraf 9
 Dudunsparce 14
-Kingambit
-Great-Tusk
-Scream-Tail
-Brute-Bonnet
-Flutter-Mane
-Slither-Wing
-Sandy-Shocks
-Iron-Treads
-Iron-Bundle
-Iron-Hands
-Iron-Jugulis
-Iron-Moth
-Iron-Thorns
-Frigibax
-Arctibax
-Baxcalibur
-Gimmighoul
-Gholdengo
-Wo-Chien
-Chien-Pao
-Ting-Lu
-Chi-Yu
-Roaring-Moon
-Iron-Valiant
+Kingambit 10
+Great-Tusk 11
+Scream-Tail 11
+Brute-Bonnet 11
+Flutter-Mane 11
+Slither-Wing 11
+Sandy-Shocks 11
+Iron-Treads 11
+Iron-Bundle 11
+Iron-Hands 11
+Iron-Jugulis 11
+Iron-Moth 11
+Iron-Thorns 11
+Frigibax 7
+Arctibax 9
+Baxcalibur 15
+Gimmighoul 8
+Gholdengo 12
+Wo-Chien 8
+Chien-Pao 8
+Ting-Lu 8
+Chi-Yu 8
+Roaring-Moon 9
+Iron-Valiant 11
 Koraidon 20
 Miraidon 20
