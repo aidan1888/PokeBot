@@ -144,3 +144,5 @@ Chumby-Pikachu
 Chumby-Girafarig
 Chumby-Stufful
 Chumby-Kirlia
+Chumby-Braviary
+Chumby-Serperior
