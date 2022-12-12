@@ -91,7 +91,7 @@ async def catch(ctx):
         elif len(new) == 4:
             num=new[2]
         num=int(num)
-        shiny= num *6
+        shiny= num * 10
         user = ctx.message.author
         name = str(user)
         name = name[:-5]
