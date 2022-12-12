@@ -69,7 +69,9 @@ Golduck 7
 Mankey 3
 Primeape 6
 Growlithe 4
+Hisuian-Growlithe 6
 Arcanine 14
+Hisuian-Arcanine 15
 Poliwag 4
 Poliwhirl 8
 Poliwrath 10
@@ -121,7 +123,9 @@ Hypno 8
 Krabby 2
 Kingler 7
 Voltorb 3
+Hisuian-Voltorb 5
 Electrode 8
+Hisuian-Electrode 10
 Exeggcute 5
 Exeggutor 10
 Alolan-Exeggutor 12
@@ -185,6 +189,7 @@ Meganium 12
 Cyndaquil 3
 Quilava 7
 Typhlosion 11
+Hisuian-Typhlosion 13
 Totodile 3
 Croconaw 7
 Feraligatr 10
@@ -241,10 +246,12 @@ Steelix 12
 Snubbull 4
 Granbull 8
 Qwilfish 5
+Hisuian-Qwilfish 7
 Scizor 12
 Shuckle 5
 Heracross 5
 Sneasel 4
+Hisuian-Sneasel 6
 Teddiursa 3
 Ursaring 8
 Slugma 6
@@ -541,6 +548,7 @@ Emboar 9
 Oshawott 3
 Dewott 6
 Samurott 9
+Hisuian-Samurott 11
 Patrat 3
 Watchog 5
 Lillipup 3
@@ -587,6 +595,7 @@ Cottonee 5
 Whimsicott 7
 Petilil 4
 Lilligant 6
+Hisuian-Lilligant 8
 Basculin 7
 Sandile 4
 Krokorok 7
@@ -611,7 +620,9 @@ Archeops 9
 Trubbish 5
 Garbodor 8
 Zorua 9
+Hisuian-Zorua 10
 Zoroark 12
+Hisuian-Zoroark 13
 Minccino 7
 Cinccino 10
 Gothita 4
@@ -670,6 +681,7 @@ Bisharp 7
 Bouffalant 3
 Rufflet 5
 Braviary 7
+Hisuian-Braviary 9
 Vullaby 6
 Mandibuzz 8
 Heatmor 7
@@ -747,14 +759,17 @@ Dedenne 8
 Carbink 7
 Goomy 5
 Sliggoo 10
+Hisuian-Sliggoo 12
 Goodra 15
+Hisuian-Goodra 17
 Klefki 5
 Phantump 6
 Trevenant 10
 Pumpkaboo 5
 Gourgeist 8
 Bergmite 4
-Avalugg 5
+Avalugg 8
+Hisuian-Avalugg 10
 Noibat 5
 Noivern 9
 Xerneas 17
@@ -766,6 +781,7 @@ Volcanion 17
 Rowlet 5
 Dartrix 6
 Decidueye 10
+Hisuian-Decidueye 12
 Litten 3
 Torracat 5
 Incineroar 9
@@ -945,7 +961,7 @@ Kleavor 9
 Ursaluna 12
 Basculegion 9
 Sneasler 10
-Overqwil 8
+Overqwil 10
 Enamorus 17
 Sprigatito 3
 Floragato 8
