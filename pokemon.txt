@@ -157,6 +157,9 @@ Electabuzz 8
 Magmar 8
 Pinsir 8
 Tauros 6
+Paldean-Tauros 8
+Paldean-Tauros-Fire 8
+Paldean-Tauros-Water 8
 Magikarp 2
 Gyarados 12
 Lapras 17
@@ -228,6 +231,7 @@ Sunkern 4
 Sunflora 8
 Yanma 4
 Wooper 5
+Paldean-Wooper 7
 Quagsire 10
 Espeon 12
 Umbreon 12
