@@ -143,7 +143,7 @@ async def catch(ctx):
                 file.write(shinylist[z])
                 z+=1
             file.close()
-            await ctx.reply(shinylist)
+            #await ctx.reply(shinylist)
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/shiny/" + new[0] + ".png", filename=new[0] + ".png")
             embed.set_image(url="attachment://" + new[0] + ".png")
             
@@ -192,7 +192,7 @@ async def pokedex(ctx):
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/1051.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/1071.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 @bot.group(with_app_command=True)
@@ -223,7 +223,7 @@ async def shinydex(ctx):
     embed.set_image(url="attachment://shinydex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="------======Catch History======------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/1051 shinies.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------======Catch History======------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/1071 shinies.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 
