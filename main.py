@@ -15,7 +15,7 @@ class Bot(commands.Bot):
     def __init__(self):
         intents = discord.Intents.default()
         #intents.messages_content = True
-        super().__init__(command_prefix="!", intents=intents)
+        super().__init__(command_prefix="!", help_command=None, intents=intents)
 
 bot = Bot()
 
@@ -33,6 +33,15 @@ async def on_ready():
     
     
     #await bot.user.edit(avatar=pfp)
+
+
+@bot.command()
+async def help(ctx):
+    embed=discord.Embed(title="COMMANDS", description= f"1.\t!catch - Catch a Pokemon\n2.\t!pokedex"
+    + " - Check your Pokedex and your collection progress\n3.\t!shinydex - Check your shiny Pokedex and your collection progress")
+    await ctx.reply(embed=embed)
+
+
 
 @bot.group(with_app_command=True)
 async def name(ctx, arg):
