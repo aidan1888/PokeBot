@@ -124,7 +124,7 @@ async def catch(ctx):
             await ctx.reply(file=file, embed=embed)
 
             count=2
-        elif shinyProb <= 2 and prob == 1 and new[0] != "nothing":
+        elif shinyProb < 2 and prob == 1 and new[0] != "nothing":
 
             embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY " + new[0] + "!")
             shinylist = ["\n"]
@@ -157,7 +157,7 @@ async def catch(ctx):
             embed.set_image(url="attachment://" + new[0] + ".png")
             await ctx.reply(file=file, embed=embed)
 
-        elif prob != 1 and shinyProb != 1:
+        elif prob != 1: #and shinyProb != 1:
             embed=discord.Embed(title=new[0] + " has fled!!", description= f"{name} almost caught " + new[0] + ", but it fled!")
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/fled.gif", filename="fled.gif")
             embed.set_image(url="attachment://fled.gif")
@@ -192,7 +192,7 @@ async def pokedex(ctx):
     embed.set_image(url="attachment://dex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/1071.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} pokemon in total\n{name}'s PokeDex Completion Progress: {caught}/1068.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 @bot.group(with_app_command=True)
@@ -223,7 +223,7 @@ async def shinydex(ctx):
     embed.set_image(url="attachment://shinydex.png")
             
     await ctx.reply(file=file, embed=embed)
-    embed=discord.Embed(title="------======Catch History======------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/1071 shinies.\nGotta catch 'em all!")
+    embed=discord.Embed(title="------======Catch History======------", description= f"{name} has caught {total} shinies in total\n{name}'s ShinyDex Completion Progress: {caught}/1068 shinies.\nGotta catch 'em all!")
     await ctx.reply(embed=embed)
 
 
