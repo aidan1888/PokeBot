@@ -124,7 +124,7 @@ async def catch(ctx):
             await ctx.reply(file=file, embed=embed)
 
             count=2
-        elif shinyProb < 2 and prob == 1 and new[0] != "nothing":
+        elif shinyProb <= 2 and prob == 1 and new[0] != "nothing":
 
             embed=discord.Embed(title=new[0], description= f"{name} has caught SHINY " + new[0] + "!")
             shinylist = ["\n"]
