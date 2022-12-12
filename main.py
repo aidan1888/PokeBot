@@ -28,9 +28,11 @@ pfp = fp.read()
 async def on_ready():
     print(f"We have logged in as {bot.user}")
     channel = bot.get_channel(1049215170351747074)
+    
 
     await channel.send("I'm back online!")
-    
+    channel = bot.get_channel(1051695020350115861)
+    await channel.send("I'm back online!")
     
     #await bot.user.edit(avatar=pfp)
 

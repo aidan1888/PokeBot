@@ -136,3 +136,11 @@ Chumby-Roggenrola
 Chumby-Dragonair
 Chumby-Darmanitan
 Chumby-Decidueye
+Chumby-Beautifly
+Chumby-Seviper
+Chumby-Golurk
+Chumby-Teddiursa
+Chumby-Pikachu
+Chumby-Girafarig
+Chumby-Stufful
+Chumby-Kirlia
