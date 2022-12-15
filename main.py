@@ -29,7 +29,9 @@ async def on_ready():
     print(f"We have logged in as {bot.user}")
     channel1 = bot.get_channel(1049215170351747074)
     channel2 = bot.get_channel(1051695020350115861)
+    channel3 = bot.get_channel(1053055744712380446)
 
+    await channel3.send("I'm back online!")
     await channel2.send("I'm back online!")
     await channel1.send("I'm back online!")
     
