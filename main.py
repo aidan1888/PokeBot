@@ -239,4 +239,71 @@ async def shinydex(ctx):
     await ctx.reply(embed=embed)
 
 
+
+@bot.group(with_app_command=True)
+async def have(ctx, arg):
+    poke=str(arg.lower())
+    user = ctx.message.author
+    name = str(user)
+    name = name[:-5]
+    file = open("PokeDex.txt", "r")
+    list = file.readlines()
+    newlist = []
+    caught=0
+    total=0
+    nLen=len(name) + 1
+    for st in list:
+        st=st.lower()
+        if st.startswith(name + "-" + poke): ##and st not in newlist:
+            total+=1
+            st=st[nLen:]
+            st=st.strip("\n")
+            ##if st not in newlist:
+            newlist.append(st)
+            caught+=1
+    
+    if total > 0:
+        embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} {arg}'s.\nGotta catch 'em all!")
+        file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="dex.png")
+        embed.set_image(url="attachment://dex.png")
+        await ctx.reply(file=file, embed=embed)
+    else:
+        embed=discord.Embed(title="------Catch History------", description= f"{name} has not caught any {arg}'s \nGotta catch 'em all!")
+        file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="dex.png")
+        embed.set_image(url="attachment://dex.png")
+        await ctx.reply(file=file, embed=embed)
+
+@bot.group(with_app_command=True)
+async def shiny(ctx, arg):
+    poke=str(arg.lower())
+    user = ctx.message.author
+    name = str(user)
+    name = name[:-5]
+    file = open("ShinyDex.txt", "r")
+    list = file.readlines()
+    newlist = []
+    caught=0
+    total=0
+    nLen=len(name) + 1
+    for st in list:
+        st=st.lower()
+        if st.startswith(name + "-*" + poke): ##and st not in newlist:
+            total+=1
+            st=st[nLen:]
+            st=st.strip("\n")
+            ##if st not in newlist:
+            newlist.append(st)
+            caught+=1
+
+    if total > 0:
+        embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} shiny {arg}'s.\nGotta catch 'em all!")
+        file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shinydex.png")
+        embed.set_image(url="attachment://shinydex.png")
+        await ctx.reply(file=file, embed=embed)
+    else:
+        embed=discord.Embed(title="------Catch History------", description= f"{name} has not caught any shiny {arg}'s.\nGotta catch 'em all!")
+        file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shinydex.png")
+        embed.set_image(url="attachment://shinydex.png")
+        await ctx.reply(file=file, embed=embed)
+
 bot.run(TOKEN)
