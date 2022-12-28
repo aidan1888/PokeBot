@@ -266,8 +266,8 @@ async def have(ctx, arg):
     
     if total > 0:
         embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} {arg}'s.\nGotta catch 'em all!")
-        file = discord.File("C:/Users/aidan/Desktop/PokeBot/dex.png", filename="dex.png")
-        embed.set_image(url="attachment://dex.png")
+        file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + poke + ".png", filename=poke + ".png")
+        embed.set_image(url="attachment://" + poke + ".png")
         await ctx.reply(file=file, embed=embed)
     else:
         embed=discord.Embed(title="------Catch History------", description= f"{name} has not caught any {arg}'s \nGotta catch 'em all!")
@@ -299,8 +299,8 @@ async def shiny(ctx, arg):
 
     if total > 0:
         embed=discord.Embed(title="------Catch History------", description= f"{name} has caught {total} shiny {arg}'s.\nGotta catch 'em all!")
-        file = discord.File("C:/Users/aidan/Desktop/PokeBot/shinydex.png", filename="shinydex.png")
-        embed.set_image(url="attachment://shinydex.png")
+        file=discord.File("C:/Users/aidan/Desktop/PokeBot/shiny/" + poke + ".png", filename=poke + ".png")
+        embed.set_image(url="attachment://" + poke + ".png")
         await ctx.reply(file=file, embed=embed)
     else:
         embed=discord.Embed(title="------Catch History------", description= f"{name} has not caught any shiny {arg}'s.\nGotta catch 'em all!")
