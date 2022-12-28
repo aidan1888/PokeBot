@@ -213,7 +213,7 @@ async def find(ctx, arg):
             num=new[2]
         num=int(num)
         num = num * 10
-        shiny= num * 10
+        shiny= num * 20
         user = ctx.message.author
         name = str(user)
         name = name[:-5]
