@@ -35,7 +35,7 @@ async def on_ready():
     await chumby.send("I'm back online!")
     await pokefield.send("I'm back online!")
     
-    #await bot.user.edit(avatar=pfp)
+    #await bot.user.edit(avatar=pfp) <--- this is to change the profile pic of the bot
 
 
 @bot.command()
@@ -102,13 +102,9 @@ async def catch(ctx):
         name = name[:-5]
         count=0
         
-
-        
         prob=random.randrange(num)
         shinyProb = random.randrange(int(shiny))
         
-
-
         if prob == 1 and shinyProb > 1 and new[0] != "nothing":
             list = ["aidan1888-Pikachu"]
             file = open("PokeDex.txt", "r")
@@ -126,8 +122,6 @@ async def catch(ctx):
                 file.write(list[z])
                 z+=1
             file.close()
-
-            #await ctx.reply(list)
 
             embed=discord.Embed(title=new[0], description= f"{name} has caught " + new[0] + "!")
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/" + new[0] + ".png", filename=new[0] + ".png")
@@ -157,7 +151,6 @@ async def catch(ctx):
                 file.write(shinylist[z])
                 z+=1
             file.close()
-            #await ctx.reply(shinylist)
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/shiny/" + new[0] + ".png", filename=new[0] + ".png")
             embed.set_image(url="attachment://" + new[0] + ".png")
             
@@ -171,7 +164,7 @@ async def catch(ctx):
             embed.set_image(url="attachment://" + new[0] + ".png")
             await ctx.reply(file=file, embed=embed)
 
-        elif prob != 1: #and shinyProb != 1:
+        elif prob != 1:
             embed=discord.Embed(title=new[0] + " has fled!!", description= f"{name} almost caught " + new[0] + ", but it fled!")
             file=discord.File("C:/Users/aidan/Desktop/PokeBot/Pokemon Dataset/fled.gif", filename="fled.gif")
             embed.set_image(url="attachment://fled.gif")
@@ -256,11 +249,10 @@ async def have(ctx, arg):
     nLen=len(name) + 1
     for st in list:
         st=st.lower()
-        if st.startswith(name + "-" + poke): ##and st not in newlist:
+        if st.startswith(name + "-" + poke):
             total+=1
             st=st[nLen:]
             st=st.strip("\n")
-            ##if st not in newlist:
             newlist.append(st)
             caught+=1
     
@@ -289,11 +281,10 @@ async def shiny(ctx, arg):
     nLen=len(name) + 1
     for st in list:
         st=st.lower()
-        if st.startswith(name + "-*" + poke): ##and st not in newlist:
+        if st.startswith(name + "-*" + poke):
             total+=1
             st=st[nLen:]
             st=st.strip("\n")
-            ##if st not in newlist:
             newlist.append(st)
             caught+=1
 
