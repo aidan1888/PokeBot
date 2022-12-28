@@ -40,9 +40,9 @@ async def on_ready():
 
 @bot.command()
 async def help(ctx):
-    embed=discord.Embed(title="COMMANDS", description= f"1.\t!catch - Catch a Pokemon\n2.\t!pokedex"
-    + " - Check your Pokedex and your collection progress\n3.\t!shinydex - Check your shiny Pokedex and your collection progress"
-    + "\n4.\t!have + argument - Check if you have a specific Pokemon by typing the command followed by the name of the Pokemon\n5."
+    embed=discord.Embed(title="COMMANDS", description= f"1.\t!catch - Catch a Pokemon\n\n2.\t!pokedex"
+    + " - Check your Pokedex and your collection progress\n\n3.\t!shinydex - Check your shiny Pokedex and your collection progress"
+    + "\n\n4.\t!have + argument - Check if you have a specific Pokemon by typing the command followed by the name of the Pokemon\n\n5."
     + "\t!shiny + argument - Check if you have a specific shiny Pokemon by typing the command followed by the name of the Pokemon")
     await ctx.reply(embed=embed)
 
