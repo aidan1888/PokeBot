@@ -27,9 +27,9 @@ pfp = fp.read()
 @bot.event
 async def on_ready():
     print(f"We have logged in as {bot.user}")
-    pokefield = bot.get_channel(1049215170351747074)
-    chumby = bot.get_channel(1051695020350115861)
-    xcessive = bot.get_channel(1053055744712380446)
+    pokefield = bot.get_channel()
+    chumby = bot.get_channel()
+    xcessive = bot.get_channel()
 
     await xcessive.send("I'm back online!")
     await chumby.send("I'm back online!")
